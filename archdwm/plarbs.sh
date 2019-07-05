@@ -16,7 +16,7 @@ esac done
 
 # DEFAULTS: #TODO
 [ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/lukesmithxyz/voidrice.git" && repobranch="voiddwm"
-[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/lukesmithxyz/LARBS/master/voiddwm/progs.csv"
+[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/lkhphuc/PLARBS/master/archdwm/progs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
 [ -z "$repobranch" ] && repobranch="master"
 
@@ -147,7 +147,7 @@ resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
 finalize(){ \
 	dialog --infobox "Preparing welcome message..." 4 50
 	echo "exec_always --no-startup-id notify-send -i ~/.local/share/larbs/larbs.png 'Welcome to PLARBS:' 'Press Super+F1 for the manual.' -t 10000"  >> "/home/$name/.config/i3/config"
-	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\\n\\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment (it will start automatically in tty1).\\n\\n.t Luke" 12 80
+	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\\n\\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment (it will start automatically in tty1).\\n\\n.t Phuc Le" 12 80
 	}
 
 ### THE ACTUAL SCRIPT ###
